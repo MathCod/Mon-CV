@@ -8,10 +8,22 @@ body {
 }
 
 header {
-    background: #1a1a1a;
-    color: white;
-    padding: 20px;
+    display: flex;
+    align-items: center;
     text-align: center;
+    gap: 400px;
+    text-align: center;
+    color: white;
+    background: #393a3f;
+    padding: 20px;
+}
+
+header img {
+    display: flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    height: auto;
 }
 
 footer {
