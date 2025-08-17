@@ -1,6 +1,6 @@
 // Bouton téléchargement PDF
 document.getElementById("downloadPDF").addEventListener("click", () => {
-    window.open("cv-mathias-berger.pdf", "_blank");
+    window.open("https://github.com/MathCod/Mon-CV/blob/main/cv-mathias-berger.pdf", "_blank");
 });
 
 // Mode sombre
