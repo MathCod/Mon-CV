@@ -10,12 +10,15 @@ body {
 header {
     display: flex;
     align-items: center;
-    text-align: center;
-    gap: 400px;
-    text-align: center;
+    justify-content: center;
     color: white;
     background: #393a3f;
     padding: 20px;
+    gap: 20px;
+}
+
+header div {
+    text-align: center;
 }
 
 header img {
@@ -45,10 +48,6 @@ header a {
 }
 
 .buttons {
-    margin-top: 10px;
-}
-
-button {
     padding: 8px 12px;
     margin: 5px;
     border: none;
@@ -57,10 +56,11 @@ button {
     color: white;
     cursor: pointer;
     transition: background 0.3s;
+    margin-top: 10px;
 }
 
-button:hover {
-    background: #0099cc;
+.buttons:hover {
+  background: #0099cc;
 }
 
 section {

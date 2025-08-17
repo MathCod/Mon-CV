@@ -1,8 +1,3 @@
-// Bouton téléchargement PDF
-document.getElementById("downloadPDF").addEventListener("click", () => {
-    window.open("https://github.com/MathCod/Mon-CV/blob/main/cv-mathias-berger.pdf", "_blank");
-});
-
 // Mode sombre
 const toggleThemeBtn = document.getElementById("toggleTheme");
 toggleThemeBtn.addEventListener("click", () => {
