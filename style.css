@@ -15,6 +15,7 @@ header {
     background: #393a3f;
     padding: 20px;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 header div {
@@ -22,11 +23,9 @@ header div {
 }
 
 header img {
-    display: flex;
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    height: auto;
 }
 
 footer {
@@ -113,4 +112,56 @@ body.dark-mode section {
 
 body.dark-mode h2 {
     color: #4fc3f7;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* avatar au-dessus du texte */
+        text-align: center;
+    }
+
+    header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    header div:last-child {
+    display: flex;
+    flex-direction: column; /* les boutons passent en colonne */
+    align-items: center;    /* centrés */
+    gap: 10px;              /* petit espace entre chaque bouton */
+}
+
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    .buttons {
+        width: 100%; /* boutons prennent toute la largeur */
+        max-width: 300px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    body {
+        font-size: 0.9rem;
+    }
+
+    .buttons {
+        font-size: 0.9rem;
+        padding: 6px 10px;
+    }
 }
